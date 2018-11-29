@@ -1,0 +1,26 @@
+.col {
+    border: 1px solid darkgrey;
+}
+select
+option[value="title"] {
+    color:  #7b7d7d ;
+    background: #d6d6d6;
+}
+
+div.item-display {
+    display: inline;
+    color: grey;
+    border-radius: 1em;
+    margin: 1px;
+    padding: 5px;
+    float: left;
+    border: 1px solid darkgrey;
+}
+.cointainer-search-filter {
+}
+
+.cointainer-search-filter .title-filter {
+    background: #e3e3e3;
+    padding: 0.3em;
+    border-radius: 0.2em;
+}
