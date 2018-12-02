@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54f0a207-cbbe-46ab-8618-2637d272ac39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/search.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery-3.3.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/filter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search-filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/search-filter.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,12 +76,12 @@
     <session id="1057051050">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="4" />
-          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.18" value="3" />
@@ -96,7 +92,7 @@
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.32" value="1" />
-          <entry key="project.opened" value="26" />
+          <entry key="project.opened" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -167,7 +163,7 @@
         <counts>
           <entry key="css" value="3173" />
           <entry key="js" value="3943" />
-          <entry key="php" value="12246" />
+          <entry key="php" value="12255" />
           <entry key="sql" value="1227" />
         </counts>
       </usages-collector>
@@ -176,7 +172,7 @@
           <entry key="CSS" value="3173" />
           <entry key="HTML" value="19" />
           <entry key="JavaScript" value="3940" />
-          <entry key="PHP" value="12208" />
+          <entry key="PHP" value="12217" />
           <entry key="SQL" value="159" />
           <entry key="Scratch" value="1090" />
         </counts>
@@ -187,7 +183,7 @@
     <favorites_list name="search" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/search.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -200,13 +196,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/filter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="162" selection-start-line="162" selection-end-line="162" />
-              <folding>
-                <element signature="n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#4;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="298">
+              <caret line="163" column="109" selection-start-line="163" selection-start-column="109" selection-end-line="163" selection-end-column="109" />
             </state>
           </provider>
         </entry>
@@ -274,6 +265,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,7 +294,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,12 +375,13 @@
       <workItem from="1543677960099" duration="1145000" />
       <workItem from="1543682399832" duration="1602000" />
       <workItem from="1543700977166" duration="10960000" />
-      <workItem from="1543755501451" duration="11261000" />
+      <workItem from="1543755501451" duration="12229000" />
+      <workItem from="1543769780130" duration="159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164779000" />
+    <option name="totallyTimeSpent" value="165906000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -402,8 +394,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16717096" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16944024" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.15204236" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -415,7 +408,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.19354838" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21129033" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.18225807" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.66451615" />
       <window_info anchor="bottom" x="502" y="317" width="361" height="103" id="Database Console" order="11" sideWeight="0.49848714" visible="true" weight="0.31935483" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -754,19 +747,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/lib/images/icon-plus.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/lib/images/icon-plus.svg" />
     <entry file="file://$PROJECT_DIR$/assets/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
-          <folding>
-            <element signature="n#!!block;n#displayCountries#0" />
-            <element signature="e#108#115#1" expanded="true" />
-            <element signature="n#!!block;n#closeDisplayCompany#0" />
-            <element signature="e#108#115#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,13 +764,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/filter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="162" selection-start-line="162" selection-end-line="162" />
-          <folding>
-            <element signature="n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#4;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="298">
+          <caret line="163" column="109" selection-start-line="163" selection-start-column="109" selection-end-line="163" selection-end-column="109" />
         </state>
       </provider>
     </entry>

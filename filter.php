@@ -161,7 +161,7 @@ $rows = $wpdb->get_results(
                                     echo "<div class='custom-control custom-checkbox'>";
                                     echo "<input type='checkbox' class='custom-control-input' id=\"id_$continent\">";
                                     echo "<div aria-expanded=\"false\" class='content-plus-minus' data-toggle='collapse' data-target=\"#collapse_$continent\">";
-                                    echo "<label class='custom-control-label' for=\"id_$continent\">$continent</label>";
+                                    echo "<label class='custom-control-label' for=\"id_$continent\">".ucwords($continent)."</label>";
                                     echo "<span class=\"plus-filter expanded\">-</span>";
                                     echo "<span class=\"plus-filter collapsed\">+</span>";
                                     echo "</div>";
