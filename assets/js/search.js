@@ -1,6 +1,4 @@
 
-
-
 function closeDisplayCountries(idButton) {
 
     var id = idButton.target.id.split("_")[1];
@@ -52,17 +50,17 @@ function displayCompany() {
 
         var nameCompany = item.options[item.selectedIndex].text;
 
-        var card_country = document.createElement('div');
-        card_country.setAttribute('class', 'item-display');
-        card_country.setAttribute('id', 'company_' + idCompany);
+        var card_company = document.createElement('div');
+        card_company.setAttribute('class', 'item-display');
+        card_company.setAttribute('id', 'company_' + idCompany);
 
-        card_country.innerHTML =
+        card_company.innerHTML =
             nameCompany + "\n" +
             "<button id=\"btn_" + idCompany + "\" type=\"button\" class=\"close\" aria-label=\"Close\">\n" +
             "    <span aria-hidden=\"true\">&times;</span>\n" +
             "</button>";
 
-        document.getElementById("display-select-company").appendChild(card_country);
+        document.getElementById("display-select-company").appendChild(card_company);
         document.getElementById("btn_" + idCompany).addEventListener('click', closeDisplayCompany);
     }
 }

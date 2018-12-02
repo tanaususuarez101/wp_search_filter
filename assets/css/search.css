@@ -1,6 +1,4 @@
-.col {
-    border: 1px solid darkgrey;
-}
+
 select
 option[value="title"] {
     color:  #7b7d7d ;
@@ -16,11 +14,100 @@ div.item-display {
     float: left;
     border: 1px solid darkgrey;
 }
-.cointainer-search-filter {
+
+
+.content-continent span
+{
+    cursor: pointer;
+    height: 1em;
 }
 
-.cointainer-search-filter .title-filter {
-    background: #e3e3e3;
-    padding: 0.3em;
+
+#container-search-filter .title-filter {
+
+    color: black;
+    text-decoration: none;
+    padding: 0.8em;
     border-radius: 0.2em;
+    cursor: pointer;
+
+
 }
+
+
+
+
+
+
+
+
+
+/**
+ * Plus - minus
+*/
+
+.plus-filter
+{
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #7b7d7d;
+    float: right;
+}
+.plus-filter:hover
+{
+    color: blue;
+}
+
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed
+{
+    display: none;
+
+}
+
+
+/**
+ * Content tag
+*/
+#content-tag ul,
+#content-tag ul li,
+#content-tag ul li ul,
+#content-tag ul li ul li
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#content-tag ul li ul li
+{
+    margin-left: 0.8em;
+}
+
+/**
+ * Content Pease
+*/
+#content-pease ul,
+#content-pease ul li,
+#content-pease ul li ul,
+#content-pease ul li ul li
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#content-pease ul li ul li
+{
+    margin-left: 1em;
+}
+#content-pease {
+    overflow: auto;
+    max-height: 25em;
+}
+
+#content-pease .collapsing
+{
+    transition-duration: 2s;
+}
+

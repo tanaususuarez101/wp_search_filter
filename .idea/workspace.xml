@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="54f0a207-cbbe-46ab-8618-2637d272ac39" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/filter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search-filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/search-filter.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="wparch_countries/db_wordpress/efc12aba-d552-477d-8545-3e9f6fd8cc21:TABLE" value="Green" />
+      <entry key="wparch_postmeta/db_wordpress/efc12aba-d552-477d-8545-3e9f6fd8cc21:TABLE" value="Green" />
+      <entry key="wparch_posts/db_wordpress/efc12aba-d552-477d-8545-3e9f6fd8cc21:TABLE" value="Green" />
+    </colors>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="true" />
+    <option name="SORT_POSITIONED" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="true" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="true" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db_wordpress@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db_wordpress@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db_wordpress@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_wordpress: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db_wordpress@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_wordpress: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db_wordpress@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_wordpress: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wparch_posts: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db_wordpress@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_wordpress: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wparch_posts: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="columns" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1057051050">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="21" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.14" value="4" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.18" value="3" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.opened" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="back_wparch_webinars" value="3" />
+          <entry key="css" value="12" />
+          <entry key="js" value="7" />
+          <entry key="php" value="19" />
+          <entry key="sql" value="23" />
+          <entry key="svg" value="1" />
+          <entry key="wp_commentmeta" value="2" />
+          <entry key="wp_comments" value="2" />
+          <entry key="wp_links" value="3" />
+          <entry key="wp_options" value="2" />
+          <entry key="wp_postmeta" value="2" />
+          <entry key="wp_posts" value="5" />
+          <entry key="wp_social_users" value="2" />
+          <entry key="wp_term_relationships" value="2" />
+          <entry key="wp_term_taxonomy" value="2" />
+          <entry key="wp_termmeta" value="1" />
+          <entry key="wp_terms" value="3" />
+          <entry key="wp_usermeta" value="2" />
+          <entry key="wp_users" value="4" />
+          <entry key="wparch_advps_optionset" value="1" />
+          <entry key="wparch_bwg_album" value="2" />
+          <entry key="wparch_bwg_gallery" value="1" />
+          <entry key="wparch_bwg_image" value="1" />
+          <entry key="wparch_bwg_image_rate" value="1" />
+          <entry key="wparch_bwg_shortcode" value="2" />
+          <entry key="wparch_bwg_theme" value="1" />
+          <entry key="wparch_comments" value="1" />
+          <entry key="wparch_comuni_ita" value="3" />
+          <entry key="wparch_countries" value="8" />
+          <entry key="wparch_icl_content_status" value="6" />
+          <entry key="wparch_icl_core_status" value="1" />
+          <entry key="wparch_icl_flags" value="4" />
+          <entry key="wparch_icl_languages" value="4" />
+          <entry key="wparch_icl_languages_translations" value="1" />
+          <entry key="wparch_icl_locale_map" value="1" />
+          <entry key="wparch_icl_mo_files_domains" value="1" />
+          <entry key="wparch_icl_node" value="4" />
+          <entry key="wparch_icl_string_pages" value="2" />
+          <entry key="wparch_icl_string_positions" value="1" />
+          <entry key="wparch_icl_string_status" value="5" />
+          <entry key="wparch_icl_string_urls" value="1" />
+          <entry key="wparch_icl_strings" value="2" />
+          <entry key="wparch_icl_translate" value="2" />
+          <entry key="wparch_icl_translation_batches" value="1" />
+          <entry key="wparch_icl_translations" value="2" />
+          <entry key="wparch_links" value="3" />
+          <entry key="wparch_options" value="5" />
+          <entry key="wparch_postmeta" value="5" />
+          <entry key="wparch_posts" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="12" />
+          <entry key="Database Element" value="120" />
+          <entry key="JavaScript" value="7" />
+          <entry key="PHP" value="19" />
+          <entry key="SQL" value="4" />
+          <entry key="SVG" value="1" />
+          <entry key="Scratch" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="3173" />
+          <entry key="js" value="3943" />
+          <entry key="php" value="12246" />
+          <entry key="sql" value="1227" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="3173" />
+          <entry key="HTML" value="19" />
+          <entry key="JavaScript" value="3940" />
+          <entry key="PHP" value="12208" />
+          <entry key="SQL" value="159" />
+          <entry key="Scratch" value="1090" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="search" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/search.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="48" column="12" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/filter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="162" selection-start-line="162" selection-end-line="162" />
+              <folding>
+                <element signature="n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#4;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="WordPress Main Plugin File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>content-tag</find>
+      <find>header-tag</find>
+      <find>content-comapany</find>
+      <find>title-filter</find>
+      <find>con</find>
+      <find>display</find>
+      <find>section-list</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/search.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/css/search.css" />
+        <option value="$PROJECT_DIR$/assets/filter.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/efc12aba-d552-477d-8545-3e9f6fd8cc21/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/efc12aba-d552-477d-8545-3e9f6fd8cc21/console_2.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/efc12aba-d552-477d-8545-3e9f6fd8cc21/console_3.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/efc12aba-d552-477d-8545-3e9f6fd8cc21/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/efc12aba-d552-477d-8545-3e9f6fd8cc21/console_4.sql" />
+        <option value="$PROJECT_DIR$/search-filter.php" />
+        <option value="$PROJECT_DIR$/assets/js/search.js" />
+        <option value="$PROJECT_DIR$/assets/css/search.css" />
+        <option value="$PROJECT_DIR$/filter.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP on XAMP" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="697" />
+    <option name="height" value="376" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="search" type="b2602c69:ProjectViewProjectNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="search" type="b2602c69:ProjectViewProjectNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="search" type="b2602c69:ProjectViewProjectNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="search" type="b2602c69:ProjectViewProjectNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="" />
+    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="SearchEverywhereHistoryKey" value="database&#9;ACTION&#9;ActivateDatabaseToolWindow" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.data.extractors.current.id" value="SQL Inserts" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/wpnextonweb.sql" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\search\assets" />
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\search" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\search\css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="filter.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/assets/filter.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.filter.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54f0a207-cbbe-46ab-8618-2637d272ac39" name="Default Changelist" comment="" />
+      <created>1543017076592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543017076592</updated>
+      <workItem from="1543017079132" duration="4529000" />
+      <workItem from="1543061862055" duration="3438000" />
+      <workItem from="1543167223269" duration="4525000" />
+      <workItem from="1543183924567" duration="1269000" />
+      <workItem from="1543185290471" duration="3204000" />
+      <workItem from="1543267021310" duration="1781000" />
+      <workItem from="1543269193663" duration="1209000" />
+      <workItem from="1543270933303" duration="3232000" />
+      <workItem from="1543309170575" duration="91000" />
+      <workItem from="1543317133794" duration="9758000" />
+      <workItem from="1543340155011" duration="7575000" />
+      <workItem from="1543348179515" duration="3020000" />
+      <workItem from="1543354783535" duration="59000" />
+      <workItem from="1543394619341" duration="28149000" />
+      <workItem from="1543430100826" duration="13896000" />
+      <workItem from="1543496236570" duration="15023000" />
+      <workItem from="1543520517520" duration="152000" />
+      <workItem from="1543521344833" duration="1944000" />
+      <workItem from="1543568555214" duration="24963000" />
+      <workItem from="1543599193530" duration="1911000" />
+      <workItem from="1543604012465" duration="59000" />
+      <workItem from="1543667711711" duration="10024000" />
+      <workItem from="1543677960099" duration="1145000" />
+      <workItem from="1543682399832" duration="1602000" />
+      <workItem from="1543700977166" duration="10960000" />
+      <workItem from="1543755501451" duration="11261000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="164779000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16717096" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.15204236" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31451613" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.19354838" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21129033" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.66451615" />
+      <window_info anchor="bottom" x="502" y="317" width="361" height="103" id="Database Console" order="11" sideWeight="0.49848714" visible="true" weight="0.31935483" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="476" y="59" width="414" height="620" id="Database Changes" order="3" sideWeight="0.5016129" weight="0.31316188" />
+      <window_info anchor="right" x="632" y="124" width="407" height="419" id="Database" order="4" sideWeight="0.4983871" weight="0.11713031" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>C:\xampp\htdocs\wordpress\</wordpressPath>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wp_usermeta">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_posts.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wp_termmeta">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/filter.php" />
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_string_positions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_node">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/efc12aba-d552-477d-8545-3e9f6fd8cc21/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/efc12aba-d552-477d-8545-3e9f6fd8cc21/console_3.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/efc12aba-d552-477d-8545-3e9f6fd8cc21/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_bwg_shortcode">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_comments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_bwg_gallery">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_links">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_languages_translations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_core_status">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wp_links">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wp_options">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_bwg_theme">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wp_posts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_countries">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_flags">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_strings">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_string_pages">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wp_terms">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wp_term_relationships">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wp_term_taxonomy">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wp_postmeta">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wp_comments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_string_urls">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_languages">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/back_wparch_webinars">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_translation_batches">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_content_status">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wp_commentmeta">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_string_status">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_options">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_translate">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_advps_optionset">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_postmeta">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/efc12aba-d552-477d-8545-3e9f6fd8cc21/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_posts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/efc12aba-d552-477d-8545-3e9f6fd8cc21/console_4.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/efc12aba-d552-477d-8545-3e9f6fd8cc21/console_5.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_bwg_album">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_icl_translations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://efc12aba-d552-477d-8545-3e9f6fd8cc21/schema/db_wordpress/table/wparch_comuni_ita">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search-filter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/lib/images/icon-plus.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="n#!!block;n#displayCountries#0" />
+            <element signature="e#108#115#1" expanded="true" />
+            <element signature="n#!!block;n#closeDisplayCompany#0" />
+            <element signature="e#108#115#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/search.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="162" selection-start-line="162" selection-end-line="162" />
+          <folding>
+            <element signature="n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#4;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
