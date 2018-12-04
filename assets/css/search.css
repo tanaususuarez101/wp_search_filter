@@ -1,28 +1,28 @@
 
-select
-option[value="title"] {
-    color:  #7b7d7d ;
-    background: #d6d6d6;
-}
-
-div.item-display {
-    display: inline;
-    color: grey;
-    border-radius: 1em;
-    margin: 1px;
-    padding: 5px;
-    float: left;
-    border: 1px solid darkgrey;
-}
 
 
-.content-continent span
+/**
+ * general classes
+*/
+
+#content-vetrina .card-body
 {
-    cursor: pointer;
-    height: 1em;
+    height: 8rem;
 }
 
-
+.content-main-title
+{
+    margin-bottom: 1em;
+}
+.content-main-title span,
+.content-main-title h3
+{
+    display: inline;
+}
+.container
+{
+    font-size: 1em;
+}
 #container-search-filter .title-filter {
 
     color: black;
@@ -31,14 +31,15 @@ div.item-display {
     border-radius: 0.2em;
     cursor: pointer;
 
-
 }
-
-
-
-
-
-
+.text-selected:hover
+{
+    color: black;
+    /*font-weight: bold;*/
+    /*text-decoration: underline black;*/
+    cursor: pointer;
+    font-size: 1.1em;
+}
 
 
 
@@ -49,15 +50,24 @@ div.item-display {
 .plus-filter
 {
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #7b7d7d;
     float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
 }
 .plus-filter:hover
 {
-    color: blue;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
 }
+
 
 [aria-expanded="false"] > .expanded,
 [aria-expanded="true"] > .collapsed
@@ -65,7 +75,6 @@ div.item-display {
     display: none;
 
 }
-
 
 /**
  * Content tag
@@ -111,3 +120,25 @@ div.item-display {
     transition-duration: 2s;
 }
 
+/**
+ * Content company
+ */
+content-company
+#content-company ul,
+#content-company ul li,
+#content-company ul li ul,
+#content-company ul li ul li
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#content-company ul li ul li
+{
+    margin-left: 0.8em;
+}
+#content-company {
+    overflow: auto;
+    max-height: 25em;
+}
