@@ -9,13 +9,18 @@
 {
     height: 8rem;
 }
+#content-vetrina .card
+{
+    margin-bottom: 1em;
+}
 
 .content-main-title
 {
     margin-bottom: 1em;
 }
 .content-main-title span,
-.content-main-title h3
+.content-main-title h3,
+.content-main-title p
 {
     display: inline;
 }
@@ -73,7 +78,6 @@
 [aria-expanded="true"] > .collapsed
 {
     display: none;
-
 }
 
 /**

@@ -1,66 +1,73 @@
 
-function closeDisplayCountries(idButton) {
 
-    var id = idButton.target.id.split("_")[1];
-    var nodeDisplay = document.getElementById( "country_"+id );
-    if ( nodeDisplay != null ) nodeDisplay.parentNode.removeChild(nodeDisplay);
+function activedCheckCountry(  ) {
 
-}
 
-function displayCountries() {
+    var inputElements = document.getElementsByClassName('checkbox');
+    var continent = [], countries = [];
 
-    var item = document.getElementById( 'select_country' );
-    var idCountry = document.getElementById( 'select_country' ).value;
 
-    // Se comprueba que no existe el contenido anteriormente.
-    if ( document.getElementById( "country_"+idCountry ) == null ) {
+    for(var i=0; inputElements[i]; ++i){
+        if(inputElements[i].checked) {
 
-        var nameCountry = item.options[item.selectedIndex].text;
+            if (inputElements[i].name === "asia" ||
+                inputElements[i].name === "europa" ||
+                inputElements[i].name === "america" ||
+                inputElements[i].name === "africa"
+            ){
+                continent.push(inputElements[i].name);
+            }else {
+                countries.push({"name":inputElements[i].name,"id":inputElements[i].id});
+            }
+            var containerCheck = {
+                "continent":continent,
+                "countries":countries
+            };
 
-        var card_country = document.createElement('div');
-        card_country.setAttribute('class', 'item-display');
-        card_country.setAttribute('id', 'country_' + idCountry);
-
-        card_country.innerHTML =
-            nameCountry + "\n" +
-            "<button id=\"btn_" + idCountry + "\" type=\"button\" class=\"close\" aria-label=\"Close\">\n" +
-            "    <span aria-hidden=\"true\">&times;</span>\n" +
-            "</button>";
-
-        document.getElementById("display-select-country").appendChild(card_country);
-        document.getElementById("btn_" + idCountry).addEventListener('click', closeDisplayCountries);
+        }
     }
+
+    console.clear();
+    //console.log(containerCheck);
 }
 
-function closeDisplayCompany(idButton) {
+$(document).ready(function () {
 
-    var id = idButton.target.id.split("_")[1];
-    var nodeDisplay = document.getElementById( "company_"+id );
-    if ( nodeDisplay != null ) nodeDisplay.parentNode.removeChild(nodeDisplay);
 
-}
+    $(".checkbox-son input[type=checkbox]").change(function () {
 
-function displayCompany() {
+        var closestUL =  $(this).closest(".checkbox-father ul");
 
-    var item = document.getElementById( 'select_company' );
-    var idCompany = document.getElementById( 'select_company' ).value;
 
-    // Se comprueba que no existe el contenido anteriormente.
-    if ( document.getElementById( "company_"+idCompany ) == null ) {
+        if (closestUL.find('.checkbox-son input[type=checkbox]:checked').length === closestUL.find('.checkbox-son input[type=checkbox]').length){
+            closestUL.prev('div').find('input[type=checkbox]').prop('checked', true);
+        } else if (closestUL.find('.checkbox-son input[type=checkbox]:checked').length === 0){
+            closestUL.prev('div').find('input[type=checkbox]').prop('checked', false);
+        } else {
+            closestUL.prev('div').find('input[type=checkbox]').prop('indeterminate', true);
+        }
 
-        var nameCompany = item.options[item.selectedIndex].text;
 
-        var card_company = document.createElement('div');
-        card_company.setAttribute('class', 'item-display');
-        card_company.setAttribute('id', 'company_' + idCompany);
 
-        card_company.innerHTML =
-            nameCompany + "\n" +
-            "<button id=\"btn_" + idCompany + "\" type=\"button\" class=\"close\" aria-label=\"Close\">\n" +
-            "    <span aria-hidden=\"true\">&times;</span>\n" +
-            "</button>";
+        //var nodeChild = closestUL.prev('div').find('input[type=checkbox]').prop('checked',checkedParent);
 
-        document.getElementById("display-select-company").appendChild(card_company);
-        document.getElementById("btn_" + idCompany).addEventListener('click', closeDisplayCompany);
-    }
-}
+
+
+    });
+    $(".checkbox-father input[type=checkbox]").change(function () {
+
+        if ($(this).closest('div').find('input[type=checkbox]:checked').length === 1) {
+            /* Selected checkbox father */
+            $(this).closest("div").next('ul').find('.checkbox-son input[type=checkbox]').prop('checked', true);
+        } else {
+            /* Selected checkbox father */
+            $(this).closest("div").next('ul').find('.checkbox-son input[type=checkbox]').prop('checked', false);
+        }
+
+    });
+});
+
+
+
+
+
