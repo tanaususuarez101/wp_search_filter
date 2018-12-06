@@ -143,7 +143,7 @@ $rows = $wpdb->get_results(
 
                                         <li class="checkbox-father">
                                             <div class='custom-control custom-checkbox'>
-                                                <input type='checkbox'  class='checkbox indeterminate custom-control-input' name="<?php echo $continent ?>" id="<?php echo "id_".$continent ?>" onclick="activedCheckCountry();" >
+                                                <input type='checkbox'  class='checkbox indeterminate custom-control-input' name="<?php echo $continent ?>" id="<?php echo "id_".$continent ?>" >
                                                 <label class='custom-control-label text-selected' for="<?php echo "id_".$continent ?>"><?php echo ucwords($continent) ?></label>
                                                 <span aria-expanded="false" data-toggle='collapse' data-target="<?php echo "#collapse_".$continent ?>" class="plus-filter ">
                                                     <b class='expanded'>-</b>
@@ -154,7 +154,7 @@ $rows = $wpdb->get_results(
                                             <?php foreach ($listCountries as $country) { ?>
                                                 <li class="checkbox-son">
                                                     <div class='custom-control custom-checkbox'>
-                                                        <input type='checkbox' class='checkbox custom-control-input' name="<?php echo $country["country"] ?>" id="<?php echo $country["id"] ?>" onclick="activedCheckCountry();">
+                                                        <input type='checkbox' class='checkbox custom-control-input' name="<?php echo $country["country"] ?>" id="<?php echo $country["id"] ?>" >
                                                         <label class='custom-control-label text-selected' for="<?php echo $country["id"] ?>"><?php echo $country["country"] ?></label>
                                                     </div>
                                                 </li>
