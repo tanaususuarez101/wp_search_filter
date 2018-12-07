@@ -1,9 +1,13 @@
 
-
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
 /**
  * general classes
 */
+#container-search-filter
+{
+    font-family: 'Comfortaa', cursive;
+}
 
 #content-vetrina .card-body
 {
@@ -27,6 +31,12 @@
 .container
 {
     font-size: 1em;
+}
+#content-pease,
+#content-company
+{
+    overflow: auto;
+    max-height: 25em;
 }
 #container-search-filter .title-filter {
 
@@ -83,66 +93,57 @@
 /**
  * Content tag
 */
-#content-tag ul,
-#content-tag ul li,
-#content-tag ul li ul,
-#content-tag ul li ul li
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 
-#content-tag ul li ul li
-{
-    margin-left: 0.8em;
-}
 
 /**
  * Content Pease
 */
-#content-pease ul,
-#content-pease ul li,
-#content-pease ul li ul,
-#content-pease ul li ul li
+#container-search-filter ul,
+#container-search-filter ul li,
+#container-search-filter ul li ul,
+#container-search-filter ul li ul li
 {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-#content-pease ul li ul li
+#container-search-filter ul li ul li
 {
     margin-left: 1em;
 }
-#content-pease {
-    overflow: auto;
-    max-height: 25em;
-}
 
-#content-pease .collapsing
-{
-    transition-duration: 2s;
-}
+
 
 /**
- * Content company
+ * Content mini-search
  */
-content-company
-#content-company ul,
-#content-company ul li,
-#content-company ul li ul,
-#content-company ul li ul li
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+
+.search_mini_content {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 1em;
 }
 
-#content-company ul li ul li
-{
-    margin-left: 0.8em;
+.search_mini_content form {
+
+    border:0.1em solid rgba(  145, 156, 147  ,1);
+    padding: 0.3em;
+    border-radius: 8em;
+    background: white;
+    display:inline;
 }
-#content-company {
-    overflow: auto;
-    max-height: 25em;
+.input_mini_search {
+
+    background-color: transparent;
+    font-size: 0.9em;
+    opacity: 1;
+    width: 11em;
+
 }
+
+
+.fa, .fa-search {
+    color: rgba(  145, 156, 147  ,1);
+}
+

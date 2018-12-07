@@ -38,31 +38,70 @@ $rows = $wpdb->get_results(
                             <div id="content-tag" class="list-filter collapse " aria-labelledby="header-tag" data-parent="#container-search-filter">
                                 <div class="card-body ">
 
-                                    <ul class="section-list">
+                                    <?php
+                                    $contentTag = new stdClass();
+                                    $contentTag->residenza = array(
+                                        array("name"=>"Abitazione","id"=>"re_1"),
+                                        array("name"=>"Attico","id"=>"re_2"),
+                                        array("name"=>"Ampliamento","id"=>"re_3"),
+                                    );
+                                    $contentTag->commerciale = array(
+                                        array("name"=>"Centro Commerciale","id"=>"co_1"),
+                                        array("name"=>"Negozio","id"=>"co_2")
+                                    );
+                                    $contentTag->culto = array(
+                                        array("name"=>"Chiesa / Anness","id"=>"cu_1"),
+                                        array("name"=>"Convento","id"=>"cu_2"),
+                                        array("name"=>"Oratorio","id"=>"cu_3"),
+                                    );
+                                    $contentTag->servizi = array(
+                                        array("name"=>"Auditorium","id"=>"se_1"),
+                                        array("name"=>"Biblioteca","id"=>"se_2"),
+                                        array("name"=>"Centro convegni","id"=>"se_3"),
+                                        array("name"=>"Centro culturale","id"=>"se_4"),
 
-                                        <?php
-                                        $level0 = array("Dormitorio","Cocinas","Baños","Terrazas");
-                                        for ($j = 0; $j < count($level0); $j++) {
-                                        ?>
-                                        <li>
-                                            <div id='<?php echo "id-".$level0[$j]?>' aria-expanded="false" data-toggle='collapse' href="<?php echo "#tag-".$level0[$j] ?>">
-                                                <label class='text-selected' for='<?php echo "id-".$level0[$j]?>' ><?php echo $level0[$j]?></label>
-                                                <span class="plus-filter expanded">-</span>
-                                                <span class="plus-filter collapsed">+</span>
-                                            </div>
-                                            <ul id='<?php echo "tag-".$level0[$j]?>' class='collapse'>
-                                                <?php for ($i = 0 ; $i < 3; $i++){ ?>
-                                                <li class="list-item">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="<?php echo $level0[$j]."_".$i ?>">
-                                                        <label class="custom-control-label text-selected" for="<?php echo $level0[$j]."_".$i ?>">subnivel</label>
-                                                    </div>
-                                                </li>
-                                                <?php } ?>
-                                            </ul>
-                                        </li>
+                                    );
+                                    ?>
+                                    <!-- <ul class="section-list"> -->
+                                    <ul>
+                                        <?php foreach ($contentTag as $generaltag => $subtag) { ?>
+
+                                            <li class="checkbox-father">
+                                                <div class='custom-control custom-checkbox'>
+                                                    <input type='checkbox'  class='custom-control-input' id="<?php echo "id_".$generaltag ?>" >
+                                                    <label class='custom-control-label text-selected' for="<?php echo "id_".$generaltag ?>"><?php echo ucwords($generaltag) ?></label>
+                                                    <span aria-expanded="false" data-toggle='collapse' data-target="<?php echo "#collapse_".$generaltag ?>" class="plus-filter ">
+                                                    <b class='expanded'>-</b>
+                                                    <b class='collapsed'>+</b>
+                                                </span>
+                                                </div>
+                                                <ul id="<?php echo "collapse_".$generaltag ?>" class='collapse collapsing'>
+                                                    <?php foreach ($subtag as $tag) { ?>
+                                                        <li class="checkbox-son">
+                                                            <div class='custom-control custom-checkbox'>
+                                                                <input type='checkbox' class='checkbox-tag custom-control-input' name="<?php echo $tag['name'] ?>" id="<?php echo $tag['id'] ?>" >
+                                                                <label class='custom-control-label text-selected' for="<?php echo $tag['id'] ?>"><?php echo ucwords($tag['name']) ?></label>
+                                                            </div>
+                                                        </li>
+                                                    <?php } ?>
+                                                </ul>
+                                            </li>
                                         <?php } ?>
                                     </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                 </div>
                             </div>
@@ -78,14 +117,27 @@ $rows = $wpdb->get_results(
 
                             <div id="content-category" class="collapse" aria-labelledby="header-category" data-parent="#container-search-filter">
                                 <div class="card-body">
-                                     <?php $category = array("Legno","Vetro","Roccia","Ferro", "Design"); ?>
+                                     <?php $category = array("Metallo","Legno","Vetro","Tessuto", "Plastica", "Cemento", "Pietra", "Ceramica", "Itonaco", "Laterizio", "Terra", "Colore"); ?>
 
-                                     <?php for ($i = 0; $i < count($category); $i++) { ?>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="<?php echo "category".$i; ?>">
-                                            <label class="custom-control-label text-selected" for="<?php echo "category".$i; ?>"><?php echo $category[$i]; ?> </label>
-                                        </div>
-                                    <?php } ?>
+
+                                    <ul>
+                                        <li class="checkbox-father">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="id_category">
+                                                <label class="custom-control-label text-selected" for="id_category">Tutto Categoria</label>
+                                            </div>
+                                            <ul>
+                                                <?php for ($i = 0; $i < count($category); $i++) { ?>
+                                                <li class="checkbox-son">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="checkbox-category custom-control-input" name="<?php echo $category[$i]; ?>" id="<?php echo "id_".$category[$i]; ?>">
+                                                        <label class="custom-control-label text-selected" for="<?php echo "id_".$category[$i]; ?>"><?php echo $category[$i]; ?></label>
+                                                    </div>
+                                                </li>
+                                                <?php } ?>
+                                            </ul>
+                                        </li>
+                                    </ul>
 
                                 </div>
                             </div>
@@ -99,7 +151,7 @@ $rows = $wpdb->get_results(
                                 <span class="plus-filter collapsed">+</span>
                             </div>
 
-                            <div id="content-pease" class="collapse show" aria-labelledby="header-pease" data-parent="#container-search-filter">
+                            <div id="content-pease" class="collapse" aria-labelledby="header-pease" data-parent="#container-search-filter">
                                 <div class="card-body">
 
                                     <!-- TODO - Clasificación de países colocado aquí provicionalmente, debe estar en una función -->
@@ -143,7 +195,7 @@ $rows = $wpdb->get_results(
 
                                         <li class="checkbox-father">
                                             <div class='custom-control custom-checkbox'>
-                                                <input type='checkbox'  class='checkbox indeterminate custom-control-input' name="<?php echo $continent ?>" id="<?php echo "id_".$continent ?>" >
+                                                <input type='checkbox'  class='indeterminate custom-control-input' id="<?php echo "id_".$continent ?>" >
                                                 <label class='custom-control-label text-selected' for="<?php echo "id_".$continent ?>"><?php echo ucwords($continent) ?></label>
                                                 <span aria-expanded="false" data-toggle='collapse' data-target="<?php echo "#collapse_".$continent ?>" class="plus-filter ">
                                                     <b class='expanded'>-</b>
@@ -154,7 +206,7 @@ $rows = $wpdb->get_results(
                                             <?php foreach ($listCountries as $country) { ?>
                                                 <li class="checkbox-son">
                                                     <div class='custom-control custom-checkbox'>
-                                                        <input type='checkbox' class='checkbox custom-control-input' name="<?php echo $country["country"] ?>" id="<?php echo $country["id"] ?>" >
+                                                        <input type='checkbox' class='checkbox-pease custom-control-input' name="<?php echo $country["country"] ?>" id="<?php echo $country["id"] ?>" >
                                                         <label class='custom-control-label text-selected' for="<?php echo $country["id"] ?>"><?php echo $country["country"] ?></label>
                                                     </div>
                                                 </li>
@@ -168,7 +220,7 @@ $rows = $wpdb->get_results(
                             </div>
                         </div>
 
-                        <!-- CARD -->
+                        <!-- Contrassegno -->
                         <div class="card">
                             <div class="card-header title-filter" id="header-brand" data-toggle="collapse" data-target="#content-brand" aria-expanded="false" aria-controls="content-brand">
                                 Contrassegno
@@ -179,12 +231,25 @@ $rows = $wpdb->get_results(
                             <div id="content-brand" class="collapse" aria-labelledby="header-brand" data-parent="#container-search-filter">
                                 <div class="card-body">
 
-                                    <?php for ($i = 0; $i < 5; $i++) { ?>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="<?php echo "brand".$i ?>">
-                                            <label class="text-selected custom-control-label" for="<?php echo "brand".$i ?>">Contrassegno<?php echo $i ?></label>
-                                        </div>
-                                    <?php } ?>
+
+                                    <ul>
+                                        <li class="checkbox-father">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="id_brand">
+                                                <label class="text-selected custom-control-label" for="id_brand">Tutto Contrassegno</label>
+                                            </div>
+                                            <ul>
+                                                <?php for ($i = 0; $i < 5; $i++) { ?>
+                                                    <li class="checkbox-son">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="<?php echo "brand".$i ?>">
+                                                            <label class="text-selected custom-control-label" for="<?php echo "brand".$i ?>">Contrassegno<?php echo $i ?></label>
+                                                        </div>
+                                                    </li>
+                                                <?php } ?>
+                                            </ul>
+                                        </li>
+                                    </ul>
 
                                 </div>
                             </div>
@@ -203,16 +268,37 @@ $rows = $wpdb->get_results(
 
                                     <!-- TODO - Colocar buscador de company -->
 
+                                    <div class="search_mini_content">
+                                        <form role="search" method="get">
+                                            <label for="input_mini_search">
+                                                <i class="fa fa-search"></i>
+                                            </label>
+                                            <input type="text" name="input_search" id="input_mini_search" class="input_mini_search" placeholder="search" onautocomplete autofocus/>
+                                        </form>
+                                    </div>
+
+
+
+
+
                                     <?php $companies = $wpdb->get_results('SELECT * from wparch_posts WHERE post_type="azienda" AND post_status="publish" ORDER BY ID ASC;', OBJECT ); ?>
                                     <ul>
-                                    <?php foreach ($companies as $company) { ?>
-                                        <li>
+                                        <li class="checkbox-father">
                                             <div class='custom-control custom-checkbox'>
-                                                <input type='checkbox' class='custom-control-input' id="<?php echo $company->ID; ?>">
-                                                <label class='custom-control-label text-selected' for="<?php echo $company->ID; ?>"><?php echo $company->post_title; ?></label>
+                                                <input type='checkbox' class='custom-control-input' id="id_company">
+                                                <label class='custom-control-label text-selected' for="id_company">Tutto Società</label>
                                             </div>
+                                            <ul>
+                                            <?php foreach ($companies as $company) { ?>
+                                                <li class="checkbox-son">
+                                                    <div class='custom-control custom-checkbox'>
+                                                        <input type='checkbox' class='checkbox-company custom-control-input' name="<?php echo $company->post_title ?>" id="<?php echo $company->ID; ?>">
+                                                        <label class='custom-control-label text-selected' for="<?php echo $company->ID; ?>"><?php echo $company->post_title; ?></label>
+                                                    </div>
+                                                </li>
+                                            <?php } ?>
+                                            </ul>
                                         </li>
-                                    <?php } ?>
                                     </ul>
                                 </div>
                             </div>
