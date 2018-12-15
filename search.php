@@ -16,71 +16,57 @@ require_once( $_SERVER['DOCUMENT_ROOT'].$portal.'/wp-includes/wp-db.php' );
 */
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    global $wpdb;
-    $db = new accessDataBase();
 
+    /**
+     * Structure SQL for after auto generate
+    */
 
+    $select = "select p.ID, p.post_content, post_title, p.guid, pm.meta_value";
+    $from = "from wparch_posts p";
+    $join = 'join wparch_postmeta pm on p.ID = pm.post_id';
+    $where = 'where post_status="publish" and post_type="vetrina" and meta_key="_wpcf_belongs_azienda_id"';
+
+    $society = $tagAndCategory = $country = array();
     if (isset($_POST['checkbox-company'])) {
+
         foreach ($_POST['checkbox-company'] as $key => $value) {
-            buildShopWindow( $db->getShopWindowBySociety($key) );
+            $society[] = $key;
         }
+        $list = implode(",", $society);
+        $where .= " and meta_value IN ($list)";
     }
-    if (isset($_POST['checkbox-category'])){
-        echo "category no found";
+    if (isset($_POST['checkbox-tag']) || isset($_POST['checkbox-category'])) {
+
+        $join .= " join wparch_term_relationships tr on p.ID = tr.object_id";
+        $join .= " join wparch_term_taxonomy tt on tr.term_taxonomy_id = tt.term_taxonomy_id";
+        $join .= " join wparch_terms t on tt.term_id = t.term_id";
+        $where .= ' and taxonomy IN ("post_tag","category")';
+
+        if (isset($_POST['checkbox-tag'])) {
+            foreach ($_POST['checkbox-tag'] as $key => $value) {
+                $tagAndCategory[] = $key;
+            }
+        }
+        if (isset($_POST['checkbox-category'])) {
+            foreach ($_POST['checkbox-category'] as $key => $value) {
+                $tagAndCategory[] = $key;
+            }
+        }
+
+        $list = implode(",", $tagAndCategory);
+        $where .= " and t.term_id IN ($list)";
     }
-    if (isset($_POST['checkbox-tag'])) {
-        echo "Tag no found";
+    if (isset($_POST['checkbox-pease'])) {
+        echo "Pease no implements";
     }
 
-    if ( ! isset($_POST['checkbox-company']) || ! isset($_POST['checkbox-category']) || ! isset($_POST['checkbox-tag']) ||
-        ! isset($_POST['checkbox-pease']) || ! isset($_POST['checkbox-brand'])) buildShopWindow(getShopWindow(null ));
+    $joinSQL = $select." ".$from." ".$join." ".$where;
+    global $wpdb;
+    echo buildShopWindow( $wpdb->get_results($joinSQL, OBJECT) );
+
+
 }
 
-class accessDataBase {
-    private $select;
-    private $where;
-    private $join;
-
-    private $basedSociety="";
-
-    function __construct() {
-        $this->select = " p.ID, p.post_title, p.post_content, p.guid ";
-        $this->where = ' post_status="publish" and post_type="vetrina" and meta_key="_wpcf_belongs_azienda_id" ';
-        $this->join = " join wparch_postmeta pm on p.ID = pm.post_id ";
-    }
-
-    function AllShopWindow(){
-
-    }
-
-    function getShopWindowByCategory(){
-
-    }
-    function getShopWindowByTag(){
-
-    }
-
-    function getShopWindowBySociety($idSociety){
-
-
-    }
-
-    private function call($joinSQL){
-        global $wpdb;
-        $joinSQL = "select".$this->select."from wparch_posts p".$this->join."where".$this->where.'and meta_value="'.$idSociety.'" ';
-        return $wpdb->get_results( $joinSQL, OBJECT );
-    }
-}
-
-function getShopWindow(){
-    global  $wpdb;
-    return $wpdb->get_results(
-        'SELECT ID,guid,post_content,post_title,post_name,post_type
-             from wparch_posts
-             where post_status="publish" AND post_type="vetrina"
-             ORDER BY ID ASC;', OBJECT );
-
-}
 
 function buildShopWindow($rows){
     foreach ($rows as $row ){
