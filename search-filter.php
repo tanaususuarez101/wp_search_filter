@@ -62,7 +62,7 @@ function custom_filter() {
                                         <ul>
                                             <li class="checkbox-father">
                                                 <div class='custom-control custom-checkbox'>
-                                                    <input type='checkbox' class='custom-control-input' value="click" id="id_tag">
+                                                    <input type='checkbox' class='custom-control-input'  id="id_tag">
                                                     <label class='custom-control-label text-selected' for="id_tag">Tutto Etichette</label>
                                                 </div>
                                                 <ul>
@@ -96,7 +96,7 @@ function custom_filter() {
                                         <ul>
                                             <li class="checkbox-father">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" value="click" id="id_category">
+                                                    <input type="checkbox" class="custom-control-input"  id="id_category">
                                                     <label class="custom-control-label text-selected" for="id_category">Tutto Categoria</label>
                                                 </div>
                                                 <ul>
@@ -117,7 +117,7 @@ function custom_filter() {
                             </div>
 
                             <!-- COUNTRY -->
-                            <div class="card">
+                            <div  style="display: none" class="card">
                                 <div class="card-header title-filter" id="header-pease" data-toggle="collapse" data-target="#content-pease" aria-expanded="false" aria-controls="content-pease">
                                     Pease
                                     <span class="plus-filter expanded">-</span>
@@ -134,7 +134,7 @@ function custom_filter() {
 
                                             <li class="checkbox-father">
                                                 <div class='custom-control custom-checkbox'>
-                                                    <input type='checkbox'  class='indeterminate custom-control-input' value="click" name="<?php echo $continent ?>" id="<?php echo "id_".$continent ?>" >
+                                                    <input type='checkbox'  class='indeterminate custom-control-input' name="<?php echo $continent ?>" id="<?php echo "id_".$continent ?>" >
                                                     <label class='custom-control-label text-selected' for="<?php echo "id_".$continent ?>"><?php echo ucwords($continent) ?></label>
                                                     <span aria-expanded="false" data-toggle='collapse' data-target="<?php echo "#collapse_".$continent ?>" class="plus-filter ">
                                                         <b class='expanded'>-</b>
@@ -174,7 +174,7 @@ function custom_filter() {
                                         <ul>
                                             <li class="checkbox-father">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" value="click" id="id_brand">
+                                                    <input type="checkbox" class="custom-control-input" id="id_brand">
                                                     <label class="text-selected custom-control-label" for="id_brand">Tutto Contrassegno</label>
                                                 </div>
                                                 <ul>
@@ -212,7 +212,7 @@ function custom_filter() {
                                         <ul>
                                             <li class="checkbox-father">
                                                 <div class='custom-control custom-checkbox'>
-                                                    <input type='checkbox' class='custom-control-input' value="click" id="id_company">
+                                                    <input type='checkbox' class='custom-control-input' id="id_company">
                                                     <label class='custom-control-label text-selected' for="id_company">Tutto Società</label>
                                                 </div>
                                                 <ul>
@@ -237,7 +237,7 @@ function custom_filter() {
                 </div>
             </div>
             <div class="col-lg-8">
-                <div id="container-vetrina"></div>
+                <div id="container-showcase"></div>
             </div>
         </div>
     </div>

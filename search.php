@@ -62,21 +62,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $joinSQL = $select." ".$from." ".$join." ".$where;
     global $wpdb;
-    echo buildShopWindow( $wpdb->get_results($joinSQL, OBJECT) );
+    $row = $wpdb->get_results($joinSQL, OBJECT);
 
+    if ( count ($row) == 0 ) echo "<p>Che vergogna! Non abbiamo una vetrina da mostrare</p>";
+    else {
+        $img = $wpdb->get_results('',OBJECT);
+        echo buildShopWindow( $row );
+    }
 
 }
 
+function getIdPost($rows){
+    $id = [];
+    foreach ( $rows as $row ) $id[$row->post_id] = $row->uid;
+    return $id;
+}
 
 function buildShopWindow($rows){
-    foreach ($rows as $row ){
-        echo '<div class="card">
-                  <div class="card-body">
-                    <p>'.$row->post_title.'</p>
-                    <a href="'.$row->guid.'">Leer mas</a>
-                  </div>
-              </div>';
+    $card = "";
+    foreach ($rows as $row){
+        $card .= '<div class="showcase">
+                        <a href="'.$row->guid.'">
+                            <p class="showcase-title">'.$row->ID.' '.$row->post_title.'</p>
+                            <img src="http://www.arkitectureonweb.com/wp-content/uploads/2018/08/481_z_slider_grande2-1024x605.jpg" alt="" class="showcase-img" alt="'.$row->post_title.'" class="showcase-img">
+                        </a>
+                        <a href="" class="">
+                            <img src="http://www.arkitectureonweb.com/wp-content/uploads/2018/08/Logo-Web-2-1024x341.jpg" alt="" class="showcase-companycard" alt="'.$row->post_title.'" class="showcase-img">
+                        </a>
+                    </div>';
     }
+    return $card;
 }
 
 

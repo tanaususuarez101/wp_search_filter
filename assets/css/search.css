@@ -7,6 +7,7 @@
 #container-search-filter
 {
     font-family: 'Comfortaa', cursive;
+    padding-bottom: 5em;
 }
 #container-search-filter ul,
 #container-search-filter ul li,
@@ -139,5 +140,47 @@ div.search-card {
 
 .fa, .fa-search {
     color: rgba(  145, 156, 147  ,1);
+}
+
+
+/**
+ * Company card
+*/
+
+
+
+div.showcase {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    float: left;
+    padding-right:1em;
+    border-bottom: darkgray 1px solid;
+    width: 15em;
+    margin-bottom: 2em;
+}
+img.showcase-companycard {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 8rem;
+}
+img.showcase-img {
+    width: 13rem;
+    height: 11rem;
+}
+
+p.showcase-title {
+    font-weight: bold;
+    color: black;
+    height: 3em;
+}
+
+div.showcase a {
+    color: black;
+}
+div.showcase a::selection {
+    text-decoration: none;
+}
+div.showcase a:hover{
+    text-decoration: none;
 }
 
