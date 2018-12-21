@@ -6,7 +6,7 @@
  * Time: 11:45
  */
 
-$portal = "/wordpress";
+$portal = "/architure";
 require_once( $_SERVER['DOCUMENT_ROOT'].$portal.'/wp-config.php' );
 require_once( $_SERVER['DOCUMENT_ROOT'].$portal.'/wp-includes/wp-db.php' );
 
@@ -72,28 +72,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
 }
 
-function getIdPost($rows){
-    $id = [];
-    foreach ( $rows as $row ) $id[$row->post_id] = $row->uid;
-    return $id;
-}
 
-function buildShopWindow($rows){
+function buildShopWindow( $rows ){
     $card = "";
-    foreach ($rows as $row){
+
+    $logoCompany = 'http://www.arkitectureonweb.com/wp-content/uploads/2018/08/Logo-Web-2-1024x341.jpg';
+    $image = 'http://www.ccsa.edu.sv/assets/camaleon_cms/image-not-found-26112ee47503d45cff89e808e1d1a5f7.png';
+
+    foreach ($rows as $row) {
+
         $card .= '<div class="showcase">
                         <a href="'.$row->guid.'">
-                            <p class="showcase-title">'.$row->ID.' '.$row->post_title.'</p>
-                            <img src="http://www.arkitectureonweb.com/wp-content/uploads/2018/08/481_z_slider_grande2-1024x605.jpg" alt="" class="showcase-img" alt="'.$row->post_title.'" class="showcase-img">
+                            <p class="showcase-title">'.$row->post_title.'</p>
+                            <img src="'.$image.'" alt="'.$row->post_title.'" class="showcase-img">
                         </a>
-                        <a href="" class="">
-                            <img src="http://www.arkitectureonweb.com/wp-content/uploads/2018/08/Logo-Web-2-1024x341.jpg" alt="" class="showcase-companycard" alt="'.$row->post_title.'" class="showcase-img">
+                        <a href="">
+                            <img src="'.$logoCompany.'" alt="" class="showcase-companycard" alt="'.$row->post_title.'">
                         </a>
                     </div>';
     }
     return $card;
 }
-
 
 
 

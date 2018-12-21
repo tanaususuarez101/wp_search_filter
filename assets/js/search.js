@@ -134,19 +134,19 @@ function loadDataBase() {
 
     var resultFilter = "";
     for (var clave in containerFilterActived){
-        console.log("clave: "+clave);
         if (Object.keys(containerFilterActived[clave]).length > 0) {
             resultFilter += '<div class="search-card"><div class="search-card-title">'+translateITA(clave)+'</div></div>';
         }
     }
     $("#filter-aplication").html('<div class="search-card"><div class="search-card-title"><i class="fa fa-search" aria-hidden="true"></i> | Cerca per » </div> </div>' + resultFilter);
 
+
     $.ajax({
         type: "post",
-        url: window.location+"/wp-content/plugins/search/search.php",
+        url: window.location+"wp-content/plugins/search/search.php",
         data: containerFilterActived,
         beforeSend:function(){
-            $("#container-showcase").html("Caricamento, per favore aspetta...");
+            $("#container-showcase").html("Caricamento, per favore aspetta...<div class=\"loader\"></div>");
         },
         success: function (data) {
             $("#container-showcase").html(data);
