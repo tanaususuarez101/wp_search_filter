@@ -154,21 +154,25 @@ div.showcase {
     text-align: center;
     float: left;
 
-    border-bottom: 1px solid lightgray;
     width: 12rem;
+
     margin: 0 .8em .2em 0;
     padding-bottom: 0.2rem;
+    border-bottom: 1px solid lightgray;
+
+
 
 }
+
 img.showcase-companycard {
     padding: .5em 0 .5em 0;
-    width: 5rem;
     height: 3rem;
     margin: 0 auto;
 
 }
 img.showcase-img {
-    height: 10rem;
+    width: 100%;
+    height: 11rem;
 }
 
 p.showcase-title {

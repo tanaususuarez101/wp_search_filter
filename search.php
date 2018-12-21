@@ -65,21 +65,49 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $row = $wpdb->get_results($joinSQL, OBJECT);
 
     if ( count ($row) == 0 ) echo "<p>Che vergogna! Non abbiamo una vetrina da mostrare</p>";
-    else {
-        $img = $wpdb->get_results('',OBJECT);
-        echo buildShopWindow( $row );
-    }
+    else echo buildShopWindow( $row );
+
+
+
 
 }
 
+function get_file_url( $file = __FILE__ ) {
+    $file_path = str_replace( "\\", "/", str_replace( str_replace( "/", "\\", WP_CONTENT_DIR ), "", $file ) );
+    if ( $file_path )
+        return content_url( $file_path );
+    return false;
+}
 
+
+
+/**
+ * TODO - Falta obtener/añadir enlace de la empresa.
+*/
 function buildShopWindow( $rows ){
-    $card = "";
 
-    $logoCompany = 'http://www.arkitectureonweb.com/wp-content/uploads/2018/08/Logo-Web-2-1024x341.jpg';
-    $image = 'http://www.ccsa.edu.sv/assets/camaleon_cms/image-not-found-26112ee47503d45cff89e808e1d1a5f7.png';
+    $card = $image = $logoCompany = "";
+    $imageNoFound = dirname( get_file_url() )."/assets/lib/nofound-capture.jpg";
+    $logoNoFound = dirname( get_file_url() )."/assets/lib/company-not-found.png";
 
     foreach ($rows as $row) {
+
+        // show window image
+        if ( has_post_thumbnail( $row->ID ) ):
+            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $row->ID )[0], 'single-post-thumbnail' );
+        else:
+            $image = $imageNoFound;
+        endif;
+
+        // show company logo
+        if ( has_post_thumbnail( $row->meta_value ) ):
+            $logoCompany = wp_get_attachment_image_src( get_post_thumbnail_id( $row->meta_value )[0], 'single-post-thumbnail' );
+        else:
+            $logoCompany = $logoNoFound;
+        endif;
+
+        //$image = "http://www.arkitectureonweb.com/wp-content/uploads/2018/08/10-Cappe-ad-aspirazione-e-filtrazion-Circle.Tech_.jpg";
+        //$logoCompany = "http://www.arkitectureonweb.com/wp-content/uploads/2018/08/xLogo-Web-1-1024x341.jpg.pagespeed.ic.bZdmowGx-h.jpg";
 
         $card .= '<div class="showcase">
                         <a href="'.$row->guid.'">

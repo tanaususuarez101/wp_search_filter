@@ -18,13 +18,12 @@ add_shortcode( "custom_filter", "custom_filter");
 
 function init_config() {
 
+    include ("search.php");
 
     wp_register_style( 'style_search.css', dirname(get_file_url()).'/assets/css/search.css' );
     wp_register_script( 'search.js', dirname(get_file_url()).'/assets/js/search.js' );
     wp_enqueue_style('style_search.css');
     wp_enqueue_script('search.js');
-
-    include ("search.php");
 
 
     echo '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">';
@@ -34,44 +33,17 @@ function init_config() {
 
 }
 
-function get_file_url( $file = __FILE__ ) {
-    $file_path = str_replace( "\\", "/", str_replace( str_replace( "/", "\\", WP_CONTENT_DIR ), "", $file ) );
-    if ( $file_path )
-        return content_url( $file_path );
-    return false;
-}
 
 function custom_filter() {
     init_config();
     ?>
-    <style>
-        .loader {
-            border: 16px solid #f3f3f3;
-            border-radius: 50%;
-            border-top: 16px solid #3498db;
-            width: 120px;
-            height: 120px;
-            -webkit-animation: spin 2s linear infinite; /* Safari */
-            animation: spin 2s linear infinite;
-        }
 
-        /* Safari */
-        @-webkit-keyframes spin {
-            0% { -webkit-transform: rotate(0deg); }
-            100% { -webkit-transform: rotate(360deg); }
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
     <div >
         <div class="row col-lg-12">
             <div id="filter-aplication" class="show-search-tag"></div>
         </div>
         <div class="row">
-            <div class="col-lg">
+            <div class="col-lg-4">
                 <div id="container-search-filter" class="accordion">
                     <div>
                         <form>

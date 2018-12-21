@@ -35,6 +35,8 @@ $(document).ready(function () {
 
 
 function loadButtonAccion() {
+
+
     $("#content-pease .checkbox-son input[type=checkbox]").change(function () {
         checkSon( $(this).closest(".checkbox-father ul") , 'checkbox-pease' );
     });
@@ -146,7 +148,7 @@ function loadDataBase() {
         url: window.location+"wp-content/plugins/search/search.php",
         data: containerFilterActived,
         beforeSend:function(){
-            $("#container-showcase").html("Caricamento, per favore aspetta...<div class=\"loader\"></div>");
+            $("#container-showcase").html("Caricamento, per favore aspetta...");
         },
         success: function (data) {
             $("#container-showcase").html(data);
